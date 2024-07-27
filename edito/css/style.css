@@ -1,0 +1,106 @@
+
+/*--header--*/
+.header{
+  background-color: white;
+  
+}
+
+.nav-link {
+  color: #000; /* Default link color */
+  transition: color 0.3s ease; /* Smooth transition */
+  background-color: transparent
+}
+
+.nav-link:hover {
+  color: rgb(4, 230, 136); /* Hover color */
+  text-decoration:none; /* Optional underline on hover */
+  background-color: rgba(0, 0, 0, 0.1); /* Optional background color on hover */
+}
+
+.btn-success{
+  background: rgb(4, 230, 136);
+}
+
+
+/*--homepage/body of herosection--*/
+
+h1{
+ 
+    font-family: "Merriweather";
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+  font-family:  sans-serif;
+  font-size: small;
+}
+
+.btn-button{
+  background:  rgb(4, 230, 136);
+ 
+   
+}
+.feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+}
+
+/*--testimonial--*/
+.testimonial {
+  text-align: center;
+  padding: 20px;
+}
+
+.testimonial p {
+  font-size: 16px; /* Medium font size */
+}
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.testimonial .rating {
+  color: #FFD700; /* Gold color for stars */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent; /* Remove default background */
+  border: 2px solid rgb(4, 230, 136); /* Add border to make it visible */
+  border-radius: 50%; /* Make it circular */
+  width: 30px;
+  height: 30px;
+}
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.carousel-control-prev-icon::before {
+  border-width: 7.5px 10px 7.5px 0;
+  border-color: transparent rgb(4, 230, 136) transparent transparent;
+}
+.carousel-control-next-icon::before {
+  border-width: 7.5px 0 7.5px 10px;
+  border-color: transparent transparent transparent rgb(4, 230, 136);
+}
+
+
+
+
+
+
+
+
+/*--footer--*/
+#footer-background{
+background-color: rgb(4, 230, 136) ;
+}
