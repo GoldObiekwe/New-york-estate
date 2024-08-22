@@ -104,3 +104,97 @@ p{
 #footer-background{
 background-color: rgb(4, 230, 136) ;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styles */
+.features svg, .testimonial-item img {
+  vertical-align: middle;
+}
+
+.footer {
+  background-color: #f8f9fa;
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 576px) {
+  .header .nav-link {
+    font-size: 0.875rem;
+  }
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  .testimonial-item img {
+    max-width: 60px;
+  }
+  .features svg {
+    width: 24px;
+    height: 24px;
+  }
+  .contact-form .form-control {
+    font-size: 0.875rem;
+  }
+}
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+  .header .nav-link {
+    font-size: 1rem;
+  }
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .btn-lg {
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .testimonial-item img {
+    max-width: 80px;
+  }
+  .features svg {
+    width: 30px;
+    height: 30px;
+  }
+  .contact-form .form-control {
+    font-size: 1rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .header .nav-link {
+    font-size: 1.125rem;
+  }
+  .btn-lg {
+    font-size: 1.5rem;
+    padding: 0.75rem 1.75rem;
+  }
+  .footer .col-md-6 {
+    padding: 1rem;
+  }
+}
