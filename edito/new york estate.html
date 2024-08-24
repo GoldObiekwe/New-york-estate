@@ -11,26 +11,40 @@
 
 <body>
 
-  <!-- Title -->
-  <section id="title" class="header">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="./images/dog-img.jpg" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(47, 185, 13)" class="bi bi-house-door" viewBox="0 0 16 16">
-          <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"></path>
-        </svg>
-        <span class="fs-4">New York Estate</span>
+  <!--header-->
+     
+        
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(47, 185, 13)" class="bi bi-house-door" viewBox="0 0 16 16">
+                  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"></path>
+                </svg>
+        <img alt="" width="" height="" class="d-inline-block align-text-top">
+        New York Estate
       </a>
-
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="./new york estate.html" class="nav-link " aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="./About.html" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="./Pricing.html" class="nav-link">Pricing</a></li>
-        <li class="nav-item"><a href="./Faq.html" class="nav-link">FAQ</a></li>
-        <button   onclick="location.href='contact.html'"class="btn btn-success -pill px-4  " type="button">Get in touch</button>
-      </ul>
-    </header>
+     
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="./new york estate.html" class="nav-link " aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="./About.html" class="nav-link">About</a></li>
+  
+                <li class="nav-item"><a href="./Pricing.html" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="./Faq.html" class="nav-link">FAQ</a></li>
+                
+                <button  onclick="location.href='contact.html'" type="button" class="btn  btn-success nav-pills  px-4 "
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .80rem; --bs-btn-font-size: .rem;">
+          Get in touch
+        </button>
+              </ul>
+    </div>
+  </nav>
+  
+  
    
+
+         
+     
+     <!--header end-->
 
         <!-- hero section-->
     <div class="container col-xxl-8 px-4 py-5">
@@ -270,8 +284,6 @@
  <!-- testimonial end -->
 
 
-
-
  <!-- contact  -->
  <section class="py-5">
                 <div class="container px-5">
@@ -315,8 +327,17 @@
                                     </div>
                                     <!-- Message input-->
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required" data-sb-can-submit="no"></textarea>
-                                        <label for="message">What apartment are you intrested in ? <br> and what is your budget/ price range ?</label>
+                                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 1rem" data-sb-validations="required" data-sb-can-submit="no"></textarea>
+                                        <label for="message">Apartment type  </label>
+                                       
+                                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                    </div>
+
+                                     <!-- Message input-->
+                                     <div class="form-floating mb-3">
+                                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 1rem" data-sb-validations="required" data-sb-can-submit="no"></textarea>
+                                       
+                                        <label for="message"> Budget or price range </label>
                                         <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                                     </div>
                                     <!-- Submit success message-->
@@ -345,16 +366,7 @@
                         </div>
                     </div>
                     <!-- Contact cards-->
-                    <div class="row gx-5 row-cols-2 row-cols-lg-4 py-5">
-                        <div class="col">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(47, 185, 13)" class="bi bi-telephone" viewBox="0 0 16 16">
-                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-                              </svg>
-                            <div class="h5 mb-2">Contact Us</div>
-                            <p class="text-muted mb-0">Phone: (123) 456-7890
-                              Email: info@Newyorkestatewebsite.com
-                              Address: 123 Main Street, IJebu ode,Lagos.</p>
-                        </div>
+                    
                         <div class="col">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(47, 185, 13)" class="bi bi-building-add" viewBox="0 0 16 16">
                                 <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0"/>
@@ -366,6 +378,7 @@
                               Saturday: 10:00 AM - 4:00 PM
                               Sunday: Closed.</p>
                         </div>
+                        <br>
                         <div class="col">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(47, 185, 13)" class="bi bi-signal" viewBox="0 0 16 16">
                                 <path d="m6.08.234.179.727a7.3 7.3 0 0 0-2.01.832l-.383-.643A7.9 7.9 0 0 1 6.079.234zm3.84 0L9.742.96a7.3 7.3 0 0 1 2.01.832l.388-.643A8 8 0 0 0 9.92.234m-8.77 3.63a8 8 0 0 0-.916 2.215l.727.18a7.3 7.3 0 0 1 .832-2.01l-.643-.386zM.75 8a7 7 0 0 1 .081-1.086L.091 6.8a8 8 0 0 0 0 2.398l.74-.112A7 7 0 0 1 .75 8m11.384 6.848-.384-.64a7.2 7.2 0 0 1-2.007.831l.18.728a8 8 0 0 0 2.211-.919M15.251 8q0 .547-.082 1.086l.74.112a8 8 0 0 0 0-2.398l-.74.114q.082.54.082 1.086m.516 1.918-.728-.18a7.3 7.3 0 0 1-.832 2.012l.643.387a8 8 0 0 0 .917-2.219m-6.68 5.25c-.72.11-1.453.11-2.173 0l-.112.742a8 8 0 0 0 2.396 0l-.112-.741zm4.75-2.868a7.2 7.2 0 0 1-1.537 1.534l.446.605a8 8 0 0 0 1.695-1.689zM12.3 2.163c.587.432 1.105.95 1.537 1.537l.604-.45a8 8 0 0 0-1.69-1.691zM2.163 3.7A7.2 7.2 0 0 1 3.7 2.163l-.45-.604a8 8 0 0 0-1.691 1.69l.604.45zm12.688.163-.644.387c.377.623.658 1.3.832 2.007l.728-.18a8 8 0 0 0-.916-2.214M6.913.831a7.3 7.3 0 0 1 2.172 0l.112-.74a8 8 0 0 0-2.396 0zM2.547 14.64 1 15l.36-1.549-.729-.17-.361 1.548a.75.75 0 0 0 .9.902l1.548-.357zM.786 12.612l.732.168.25-1.073A7.2 7.2 0 0 1 .96 9.74l-.727.18a8 8 0 0 0 .736 1.902l-.184.79zm3.5 1.623-1.073.25.17.731.79-.184c.6.327 1.239.574 1.902.737l.18-.728a7.2 7.2 0 0 1-1.962-.811zM8 1.5a6.5 6.5 0 0 0-6.498 6.502 6.5 6.5 0 0 0 .998 3.455l-.625 2.668L4.54 13.5a6.502 6.502 0 0 0 6.93-11A6.5 6.5 0 0 0 8 1.5"/>
@@ -376,6 +389,7 @@
                               Twitter: @Newyorkestatewebsite
                               Instagram: @Newyorkestatewebsite.</p>
                         </div>
+                        <br>
                         <div class="col">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(47, 185, 13)" class="bi bi-telephone" viewBox="0 0 16 16">
                                 <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
@@ -392,6 +406,8 @@
 
 
  <!-- contact end -->
+
+
  
 
 
